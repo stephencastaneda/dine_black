@@ -1,0 +1,409 @@
+[
+  {
+      "model": "dineblackapp.restaurant",
+      "pk": 1,
+      "fields": {
+          "name": "Coneheads",
+          "city": "Nashville",
+          "state": "Tennessee",
+          "address": "1315 Dickerson Pike",
+          "zip_code": "37207",
+          "phone_number": "629-888-4867",
+          "latitude": "36.195490",
+          "longitude": "-86.771710"
+      }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 2,
+    "fields": {
+        "name": "Amy's Ethiopian Cafe",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2510 Murfreesboro Pike #10",
+        "zip_code": "37217",
+        "phone_number": "615-840-6431",
+        "latitude": "36.078860",
+        "longitude": "-86.642590"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 3,
+    "fields": {
+        "name": "Bone's Fish & More",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2597 Murfreesboro Pike",
+        "zip_code": "37217",
+        "phone_number": "629-888-9931",
+        "latitude": "36.074610",
+        "longitude": "86.639630"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 4,
+    "fields": {
+        "name": "Fat Boys BBQ",
+        "city": "Antioch",
+        "state": "Tennessee",
+        "address": "2733 Murfreesboro Pike",
+        "zip_code": "37013",
+        "phone_number": "615-360-9969",
+        "latitude": "36.069120",
+        "longitude": "-86.633550"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 5,
+    "fields": {
+        "name": "Prince's Hot Chicken Shack South",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "5814 Nolensville Pike #110",
+        "zip_code": "37211",
+        "phone_number": "615-810-9388",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 6,
+    "fields": {
+        "name": "400 Degrees Hot Chicken",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "3704 Clarksville Pike",
+        "zip_code": "37218",
+        "phone_number": "615-244-4467",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 7,
+    "fields": {
+        "name": "Taste of Perfection LLC",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "3700 Buena Vista Pike",
+        "zip_code": "37218",
+        "phone_number": "6154806012",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 8,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 9,
+    "fields": {
+        "name": "Gojo Ethiopian Cafe and Restaurant",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "415 West Thompson Lane",
+        "zip_code": "37211",
+        "phone_number": "615-322-0710",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 10,
+    "fields": {
+        "name": "StrikeOut Wingz",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2521 Nolensville Pike",
+        "zip_code": "37211",
+        "phone_number": "615-891-1298",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 11,
+    "fields": {
+        "name": "Ajora Kitchen",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "34 Arcade Valley",
+        "zip_code": "37219",
+        "phone_number": "615-891-1898",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 12,
+    "fields": {
+        "name": "Silver Sands Soul Food Cafe",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "937 Locklayer St.",
+        "zip_code": "37208",
+        "phone_number": "615-780-9900",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 13,
+    "fields": {
+        "name": "Bolton's Spicy Chicken & Fish",
+        "city": "Antioch",
+        "state": "Tennessee",
+        "address": "1135 Bell Rd.",
+        "zip_code": "37013",
+        "phone_number": "615-730-8359",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 15,
+    "fields": {
+        "name": "The Cake Project",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1600 Fatherland St. Suite 207",
+        "zip_code": "37206",
+        "phone_number": "615-538-8271",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 16,
+    "fields": {
+        "name": "HiFi Cookies",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "733 Porter Rd.",
+        "zip_code": "37206",
+        "phone_number": "615-401-9949",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 17,
+    "fields": {
+        "name": "Kernels Gourmet Popcorn",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2501 Gallatin Ave B",
+        "zip_code": "37206",
+        "phone_number": "615-378-7674",
+        "latitude": "36.043709",
+        "longitude": "-86.712387"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 18,
+    "fields": {
+        "name": "Shugga Hi Bakery and Cafe",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1000 Dickerson Pike",
+        "zip_code": "37207",
+        "phone_number": "615-928-6576",
+        "latitude": "36.1893824",
+        "longitude": "-86.7732255"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 19,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 20,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 21,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 22,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 23,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 24,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 25,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 26,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 27,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 28,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 29,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+  {
+    "model": "dineblackapp.restaurant",
+    "pk": 30,
+    "fields": {
+        "name": null,
+        "city": 2,
+        "state": "2015-04-13",
+        "address": "2015-04-13",
+        "zip_code": "2015-04-13",
+        "phone_number": "2015-04-13",
+        "latitude": "2015-04-13",
+        "longitude": "2015-04-13"
+    }
+  },
+
+] 
