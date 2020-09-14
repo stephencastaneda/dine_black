@@ -1,9 +1,9 @@
 [
   {
-      "model": "dineblackapp.restaurant",
+      "model": "dineblackapp.restaurantdishreview",
       "pk": 1,
       "fields": {
-          "rating_number": 5,
+          "dish_rating_number": "4.5",
           "dish_name": "Lasagna",
           "dish_img": "https://www.vege-licious.com/wp-content/uploads/2018/07/Vegan-lasagna-300x300.jpg",
           "restaurant_id": 21,
@@ -12,10 +12,10 @@
         }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantdishreview",
     "pk": 2,
     "fields": {
-      "rating_number": 4,
+      "dish_rating_number": "4.5",
       "dish_name": "BBQ Tofu Burger",
       "dish_img": "https://www.vege-licious.com/wp-content/uploads/2018/12/20181220_115823-2-300x273.jpg",
       "restaurant_id": 21,

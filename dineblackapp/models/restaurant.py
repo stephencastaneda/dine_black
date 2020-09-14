@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-class Restaurant(models.model):
+class Restaurant(models.Model):
 
     name = models.CharField(max_length=50)
     city = models.CharField(max_length=25)

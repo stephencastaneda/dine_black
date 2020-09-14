@@ -1,10 +1,11 @@
 from .restaurant import Restaurant
 from .diner import Diner
+from django.db import models
 
-class FavoriteRestaurant(models.model):
+class FavoriteRestaurant(models.Model):
 
-    restaurant_id = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True)
-    diner_id = models.ForeignKey(Diner, related_name=("diner"), on_delete=models.DO_NOTHING, null=True, blank=True)
+    restaurant = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True)
+    diner = models.ForeignKey(Diner, on_delete=models.DO_NOTHING, null=True, blank=True)
 
     class Meta:
         verbose_name = ("favorite_restaurant")

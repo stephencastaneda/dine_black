@@ -3,11 +3,11 @@ from .diner import Diner
 from django.db import models
 from django.urls import reverse
 
-class RestaurantRating(models.model):
+class RestaurantRating(models.Model):
 
-    rating_number = models.CharField(max_length=10)
-    restaurant_id = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True)
-    diner_id = models.ForeignKey(Diner, related_name=("diner"), on_delete=models.DO_NOTHING, null=True, blank=True)
+    restaurant_rating_number = models.DecimalField(max_digits=10, decimal_places=1, null=True)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.DO_NOTHING, null=True, blank=True)
+    diner = models.ForeignKey(Diner, on_delete=models.DO_NOTHING, null=True, blank=True)
 
     class Meta:
         verbose_name = ("restaurant_rating")

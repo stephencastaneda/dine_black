@@ -1,72 +1,72 @@
 [
   {
-      "model": "dineblackapp.restaurant",
+      "model": "dineblackapp.restaurantrating",
       "pk": 1,
       "fields": {
-          "rating_number": 4,
+          "restaurant_rating_number": "5.0",
           "restaurant_id": 1,
           "diner_id": 1
       }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 2,
     "fields": {
-      "rating_number": 4,
+      "restaurant_rating_number": "5.0",
       "restaurant_id": 2,
       "diner_id": 1
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 3,
     "fields": {
-      "rating_number": 5,
+      "restaurant_rating_number": "3.5",
       "restaurant_id": 3,
       "diner_id": 1
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 4,
     "fields": {
-      "rating_number": 3,
+      "restaurant_rating_number": "3.5",
       "restaurant_id": 4,
       "diner_id": 1
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 5,
     "fields": {
-      "rating_number": 4,
+      "restaurant_rating_number": "4.0",
       "restaurant_id": 5,
       "diner_id": 2
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 6,
     "fields": {
-      "rating_number": 5,
+      "restaurant_rating_number": "4.0",
       "restaurant_id": 5,
       "diner_id": 2
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 7,
     "fields": {
-      "rating_number": 5,
+      "restaurant_rating_number": "4.5",
       "restaurant_id": 6,
       "diner_id": 2
     }
   },
   {
-    "model": "dineblackapp.restaurant",
+    "model": "dineblackapp.restaurantrating",
     "pk": 8,
     "fields": {
-      "rating_number": 4,
+      "restaurant_rating_number": "5.0",
       "restaurant_id": 7,
       "diner_id": 2
     }

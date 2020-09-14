@@ -1,13 +1,14 @@
 from .restaurant import Restaurant
+from .diner import Diner
 from django.db import models
 from django.urls import reverse
 
-class RestaurantDishReview(models.model):
+class RestaurantDishReview(models.Model):
 
-    rating_number = models.CharField(max_length=10)
+    dish_rating_number = models.DecimalField(max_digits=5, decimal_places=1, null=True)
     dish_name = models.CharField(max_length=25)
     dish_img = models.CharField(max_length=50)
-    restaurant_id = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True)
-    diner_id = models.ForeignKey(Diner, related_name=("diner"), on_delete=models.DO_NOTHING, null=True, blank=True)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.DO_NOTHING, null=True, blank=True)
+    diner = models.ForeignKey(Diner, on_delete=models.DO_NOTHING, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -337,20 +337,6 @@
   },
   {
     "model": "dineblackapp.restaurant",
-    "pk": 27,
-    "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
-    }
-  },
-  {
-    "model": "dineblackapp.restaurant",
     "pk": 28,
     "fields": {
         "name": "The Local Distro",
