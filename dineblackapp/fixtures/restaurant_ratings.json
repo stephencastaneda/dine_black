@@ -1,0 +1,74 @@
+[
+  {
+      "model": "dineblackapp.restaurantrating",
+      "pk": 1,
+      "fields": {
+          "restaurant_rating_number": "5.0",
+          "restaurant_id": 1,
+          "diner_id": 1
+      }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 2,
+    "fields": {
+      "restaurant_rating_number": "5.0",
+      "restaurant_id": 2,
+      "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 3,
+    "fields": {
+      "restaurant_rating_number": "3.5",
+      "restaurant_id": 3,
+      "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 4,
+    "fields": {
+      "restaurant_rating_number": "3.5",
+      "restaurant_id": 4,
+      "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 5,
+    "fields": {
+      "restaurant_rating_number": "4.0",
+      "restaurant_id": 5,
+      "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 6,
+    "fields": {
+      "restaurant_rating_number": "4.0",
+      "restaurant_id": 5,
+      "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 7,
+    "fields": {
+      "restaurant_rating_number": "4.5",
+      "restaurant_id": 6,
+      "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.restaurantrating",
+    "pk": 8,
+    "fields": {
+      "restaurant_rating_number": "5.0",
+      "restaurant_id": 7,
+      "diner_id": 2
+    }
+  }
+]

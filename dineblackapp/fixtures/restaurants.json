@@ -99,20 +99,6 @@
   },
   {
     "model": "dineblackapp.restaurant",
-    "pk": 8,
-    "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
-    }
-  },
-  {
-    "model": "dineblackapp.restaurant",
     "pk": 9,
     "fields": {
         "name": "Gojo Ethiopian Cafe and Restaurant",
@@ -241,169 +227,154 @@
     "model": "dineblackapp.restaurant",
     "pk": 19,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Seafood Sensation",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2719 Jefferson St",
+        "zip_code": "37208",
+        "phone_number": "615-678-5606",
+        "latitude": "36.1674083",
+        "longitude": "-86.8200043"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 20,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "City Farm Company",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1407 Clinton St.",
+        "zip_code": "37203",
+        "phone_number": "615-772-4632",
+        "latitude": "36.1635456",
+        "longitude": "-86.7971221"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 21,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Vege-licious Cafe",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "513B Fisk St",
+        "zip_code": "37203",
+        "phone_number": "615-942-6978",
+        "latitude": "36.1603219",
+        "longitude": "-86.8007621"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 22,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "The Cupcake Collection",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1213 6th Ave North",
+        "zip_code": "37208",
+        "phone_number": "615-244-2900",
+        "latitude": "36.1750325",
+        "longitude": "36.1750325"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 23,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "8th and Roast",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "2108 8th Ave South",
+        "zip_code": "37204",
+        "phone_number": "615-730-8074",
+        "latitude": "36.1318079",
+        "longitude": "-86.7785759"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 24,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Tacos With A Twist",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "810 Gale Park Lane #104",
+        "zip_code": "37204",
+        "phone_number": "615-649-8118",
+        "latitude": "36.1196759",
+        "longitude": "-86.7756514"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 25,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Big Al's Deli",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1828 4th Ave North",
+        "zip_code": "37208",
+        "phone_number": "615-242-8118",
+        "latitude": "36.1861475",
+        "longitude": "-86.7939233"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 26,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
-    }
-  },
-  {
-    "model": "dineblackapp.restaurant",
-    "pk": 27,
-    "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Germantown Pub",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "708 Monroe St",
+        "zip_code": "37208",
+        "phone_number": "615-457-2145",
+        "latitude": "36.1756569",
+        "longitude": "-86.7925768"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 28,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "The Local Distro",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "614 Garfield St",
+        "zip_code": "37208",
+        "phone_number": "615-942-8276",
+        "latitude": "36.1814253",
+        "longitude": "-86.7949996"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 29,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "Slim and Husky's Pizza Beeria",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "911 Buchanan St",
+        "zip_code": "37208",
+        "phone_number": "615-647-7017",
+        "latitude": "36.1802463",
+        "longitude": "-86.8027084"
     }
   },
   {
     "model": "dineblackapp.restaurant",
     "pk": 30,
     "fields": {
-        "name": null,
-        "city": 2,
-        "state": "2015-04-13",
-        "address": "2015-04-13",
-        "zip_code": "2015-04-13",
-        "phone_number": "2015-04-13",
-        "latitude": "2015-04-13",
-        "longitude": "2015-04-13"
+        "name": "The Southern V",
+        "city": "Nashville",
+        "state": "Tennessee",
+        "address": "1200 Buchanan St",
+        "zip_code": "37208",
+        "phone_number": "615-802-8136",
+        "latitude": "36.1803978",
+        "longitude": "-86.8069492"
     }
-  },
-
+  }
 ] 

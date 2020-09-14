@@ -1,0 +1,66 @@
+[
+  {
+      "model": "dineblackapp.favoriterestaurant",
+      "pk": 1,
+      "fields": {
+          "restaurant_id": 1,
+          "diner_id": 1
+      }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 2,
+    "fields": {
+        "restaurant_id": 3,
+        "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 3,
+    "fields": {
+        "restaurant_id": 4,
+        "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 4,
+    "fields": {
+        "restaurant_id": 5,
+        "diner_id": 1
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 5,
+    "fields": {
+        "restaurant_id": 12,
+        "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 6,
+    "fields": {
+        "restaurant_id": 15,
+        "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 7,
+    "fields": {
+        "restaurant_id": 22,
+        "diner_id": 2
+    }
+  },
+  {
+    "model": "dineblackapp.favoriterestaurant",
+    "pk": 8,
+    "fields": {
+        "restaurant_id": 19,
+        "diner_id": 2
+    }
+  }
+]
