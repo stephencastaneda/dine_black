@@ -1,4 +1,6 @@
 asgiref==3.2.10
 Django==3.1.1
+-e git+https://github.com/makinacorpus/django-leaflet.git@7d6e028b4902430dbac2a4722ebca3337d922419#egg=django_leaflet
+leaflet==0.0.3
 pytz==2020.1
 sqlparse==0.3.1
