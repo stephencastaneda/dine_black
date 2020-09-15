@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dineblackapp',
     'leaflet',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
