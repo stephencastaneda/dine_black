@@ -4,7 +4,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from dinerapp.models import Diner
+from dineblackapp.models import Diner
 
 def register_user(request):
     """Handles creation of a new user for auth
@@ -24,20 +24,13 @@ def register_user(request):
             last_name=request.POST['last_name']
         )
 
-        diner = Diner.objects.create(
-            user=new_user,
-            # If you have other form data to save on the new librarian...
-            address=request.POST['address'],
-            phone_number=request.POST['phone_number']
-        )
-
         authenticated_user = authenticate(username=request.POST['username'], password=request.POST['password'])
 
         if authenticated_user is not None:
             login(request, authenticated_user)
 
             # Redirect the browser to wherever you want to go after registering
-            return redirect(reverse('dineapp:home'))
+            return redirect(reverse('dineblackapp:home'))
 
     # handles a request to load the empty form for the user to fill out
     else:

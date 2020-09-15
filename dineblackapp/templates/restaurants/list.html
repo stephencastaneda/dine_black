@@ -1,4 +1,4 @@
-{% extends 'shared/base.html' %}
+{% comment %} {% extends 'shared/base.html' %} {% endcomment %}
 {% load static %}
 
 {% block css %}
@@ -15,19 +15,19 @@
 
     {% comment %} <a href="{% url 'libraryapp:book_form' %}">Add Book to Inventory</a> {% endcomment %}
 
-    <ol class="books">
-    {% for restaurants in all_books %}
-        <li class="book">
-            <a class="book__title" href="{% url 'libraryapp:book' book.id %}"> {{ book.title }}</a>
-            <div class="book__description">
-                by {{book.author}} published in {{book.year_published}}
+    <ol class="">
+    {% for restaurants in all_restaurants %}
+        <li class="restaurant">
+            <div class="">
+                <h2>{{ restaurants.name }}</h2>
+                <p>{{ restaurants.address }}</p>
             </div>
-            <button id="detail--{{ book.id }}">Details</button>
+            {% comment %} <button id="detail--{{ book.id }}">Details</button> {% endcomment %}
         </li>
     {% endfor %}
     </ol>
 {% endblock %}
 
-{% block scripts %}
-    <script src="{% static 'scripts/books.js' %}"></script>
-{% endblock %}
+{% comment %} {% block scripts %} {% endcomment %}
+    {% comment %} <script src="{% static 'scripts/books.js' %}"></script> {% endcomment %}
+{% comment %} {% endblock %} {% endcomment %}
