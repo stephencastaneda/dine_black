@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dineblackapp',
-    'leaflet',
     'bootstrap4',
+    'star_ratings'
 ]
 
 MIDDLEWARE = [

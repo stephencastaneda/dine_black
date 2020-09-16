@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Check-In</title>
+  </head>
+  <body>
+    <h1>Check-In</h1>
+<h3>{{ user.first_name }}</h3>
+    <form action="{% url 'dineblackapp:checkins' %}" method="post">
+      {% csrf_token %}
+      <fieldset>
+          <label for="dish_name">Dish Name: </label>
+          <input id="dish_name" type="text" name="dish_name">
+      </fieldset>
+      <fieldset>
+          <label for="dish_image">Dish Image: </label>
+          <input id="dish_image" type="text" name="dish_image">
+      </fieldset>
+      <fieldset>
+          <label for="created_at">Date: </label>
+          <input id="created_at" type="date" name="created_at">
+      </fieldset>
+      <fieldset>
+          <label for="dish_rating_number">Dish Rating Number: </label>
+          <input id="dish_rating_number" type="number" min="1" max="5" name="dish_rating_number">
+      </fieldset>
+      <fieldset>
+          <label for="restaurant">Restaurant: </label>
+          <select id="restaurant" type="text" name="restaurant">
+                {% for restaurant in restaurants %}
+                    <option value="{{ restaurant.id }}">{{ restaurant.name }}</option>
+                {% endfor %}
+          </select>
+      </fieldset>
+
+      <input type="submit" value="Check-In" />
+    </form>
+
+    <ol>
+    {% for user_check_in in user_check_ins %}
+        <li>
+            {{ user_check_in.dish_name }}
+        </li>
+    {% endfor %}
+    </ol>
+    
+  </body>
+</html>

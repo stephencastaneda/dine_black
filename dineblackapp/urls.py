@@ -12,5 +12,5 @@ urlpatterns = [
   path('logout/', logout_user, name='logout'),
   path('register/', register_user, name="register"),
   path('', restaurant_list, name='home'),
-  url(r'^$', TemplateView.as_view(template_name='leaflet.html'), name='map'),
+  path('checkins', check_in_list, name='checkins')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
