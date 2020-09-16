@@ -1,6 +1,8 @@
 from django.urls import path, include
 from django.conf import settings
+from django.conf.urls import url
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 from .views import *
 
 app_name = "dineblackapp"
@@ -10,5 +12,5 @@ urlpatterns = [
   path('logout/', logout_user, name='logout'),
   path('register/', register_user, name="register"),
   path('', restaurant_list, name='home'),
-
+  url(r'^$', TemplateView.as_view(template_name='leaflet.html'), name='map'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
