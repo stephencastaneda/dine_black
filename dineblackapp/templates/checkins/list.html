@@ -43,11 +43,17 @@
         <li>
             {{ user_check_in.dish_name }}
         </li>
+      <section id="checkin-actions" style="display:flex;">
         <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
           {% csrf_token %}
           <input type="hidden" name="actual_method" value="DELETE">
           <button>Delete</button>
         </form>
+         <form action="{% url 'dineblackapp:checkin_edit_form' user_check_in.id %}" method="GET">
+            {% csrf_token %}
+            <button>Edit</button>
+        </form>
+      </section>
     {% endfor %}
     </ol>
      
