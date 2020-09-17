@@ -40,16 +40,16 @@
 
     <ol>
     {% for user_check_in in user_check_ins %}
-      <form action="{% url 'dineblackapp:checkins' restaurant.id %}" method="POST">
-      {% csrf_token %}
-      <input type="hidden" name="actual_method" value="DELETE">
-      <button>Delete</button>
-      </form>
         <li>
             {{ user_check_in.dish_name }}
         </li>
+        <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="actual_method" value="DELETE">
+          <button>Delete</button>
+        </form>
     {% endfor %}
     </ol>
-    
+     
   </body>
 </html>
