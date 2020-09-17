@@ -10,5 +10,8 @@
     <h2>By {{ restaurant.address }}</h2>
 
     <div>Phone Number: {{ restaurant.phone_number }}</div>
+        {% for checkin in checkins %}
+            <div> {{ checkin.dish_name }}</div>
+        {% endfor %}
   </body>
 </html>
