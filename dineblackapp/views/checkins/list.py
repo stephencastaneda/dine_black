@@ -2,7 +2,7 @@ import sqlite3
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
-from dineblackapp.models import RestaurantDishReview, Diner, Restaurant
+from dineblackapp.models import RestaurantDishReview, Diner, Restaurant, RestaurantDishReview
 from ..connection import Connection
 
 def get_restaurants():
@@ -11,8 +11,16 @@ def get_restaurants():
 
         return(all_restaurants)
 
+# def get_restaurant_dish_review(restaurantdishreview_id):
+
+#     single_restaurant_review = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
+
+#     return(single_restaurant_review)
+
+
 def check_in_list(request):
     if request.method == "GET":
+
         restaurants = get_restaurants()
         diner = Diner.objects.get(user=request.user)
         user_check_ins = RestaurantDishReview.objects.filter(diner=diner)
@@ -21,7 +29,7 @@ def check_in_list(request):
 
         context = {
             'user_check_ins': user_check_ins,
-            'restaurants': restaurants
+            'restaurants': restaurants,
         }
 
         return render(request, template_name, context)
@@ -43,4 +51,17 @@ def check_in_list(request):
           'new_check_in': new_check_in
         }
 
+        return redirect(reverse('dineblackapp:checkins'))
+
+    elif request.method == 'POST':
+      form_data = request.POST
+
+      if (
+        "actual_method" in form_data
+        and form_data["actual_method"] == "DELETE"
+      ):
+
+        restaurant_review_to_burn = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
+        restaurant_review_to_burn.delete()
+            
         return redirect(reverse('dineblackapp:checkins'))
