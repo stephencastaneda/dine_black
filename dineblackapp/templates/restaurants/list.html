@@ -26,7 +26,9 @@
         <div class="card-body">
           <h5 class="card-title">{{ restaurants.name }}</h5>
           <p class="card-text">{{ restaurants.address }}</p>
-          <a href="#" class="btn btn-primary">Details</a>
+          <li>
+            <a class="restaurant__name" href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a>
+          </li>
         </div>
       </div>
     </div>

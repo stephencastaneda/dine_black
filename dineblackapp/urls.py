@@ -12,5 +12,7 @@ urlpatterns = [
   path('logout/', logout_user, name='logout'),
   path('register/', register_user, name="register"),
   path('', restaurant_list, name='home'),
-  path('checkins', check_in_list, name='checkins')
+  path('checkins', check_in_list, name='checkins'),
+  path('restaurants/<int:restaurant_id>/', restaurant_details, name='restaurant'),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
