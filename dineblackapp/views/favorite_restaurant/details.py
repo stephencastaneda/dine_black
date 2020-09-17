@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from dineblackapp.models import FavoriteRestaurant
 from ..connection import Connection
  
-def favorite_delete(request):
+def favorite_delete(request, favoriterestaurant_id):
  if request.method == 'POST':
         form_data = request.POST
 
@@ -14,7 +14,7 @@ def favorite_delete(request):
             and form_data["actual_method"] == "DELETE"
         ):
 
-            checkin_to_delete = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
+            checkin_to_delete = FavoriteRestaurant.objects.get(pk=favoriterestaurant_id)
             checkin_to_delete.delete()
 
         return redirect(reverse('dineblackapp:favorites'))
