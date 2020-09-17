@@ -11,12 +11,6 @@ def get_restaurants():
 
         return(all_restaurants)
 
-# def get_restaurant_dish_review(restaurantdishreview_id):
-
-#     single_restaurant_review = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
-
-#     return(single_restaurant_review)
-
 
 def check_in_list(request):
     if request.method == "GET":
@@ -24,7 +18,6 @@ def check_in_list(request):
         restaurants = get_restaurants()
         diner = Diner.objects.get(user=request.user)
         user_check_ins = RestaurantDishReview.objects.filter(diner=diner)
-        print('the diner', diner)
         template_name = 'checkins/list.html'
 
         context = {
