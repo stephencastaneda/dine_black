@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bangazon</title>
+    <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
+    <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
+  </head>
+  <body>
+    <h1>Edit Check In</h1>
+      <form action="{% url 'dineblackapp:checkins' %}" method="post">
+      {% csrf_token %}
+ <fieldset>
+            <label for="dish_name">Dish Name: </label>
+            <input id="dish_name" type="text" name="dish_name" value="{{ dish_review.dish_name }}">
+        </fieldset>
+        <fieldset>
+            <label for="dish_image">Dish Image: </label>
+            <input id="dish_image" type="text" name="dish_image" value="{{ dish_review.dish_img }}">
+        </fieldset>
+        <fieldset>
+            <label for="created_at">Date: </label>
+            <input id="created_at" type="date" name="created_at" value="{{ dish_review.created_at }}">
+        </fieldset>
+        <fieldset>
+            <label for="dish_rating_number">Dish Rating Number: </label>
+            <input id="dish_rating_number" type="number" min="1" max="5" name="dish_rating_number" value="{{ dish_review.dish_rating_number }}">
+        </fieldset>
+        <fieldset>
+            <label for="restaurant">Restaurant: </label>
+            <select id="restaurant" type="text" name="restaurant">
+                {% for restaurant in all_restaurants %}
+                <option {% if restaurant.id == dish_review.restaurant_id %}selected{% endif %} value="{{ dish_review.restaurant_id }}">
+                    {{ restaurant.name }}</option>
+                {% endfor %}
+            </select>
+        </fieldset>
+         <input type="hidden" name="actual_method" value="PUT">
+          <input type="submit" value="Update" />    
+  </body>
+</html>
