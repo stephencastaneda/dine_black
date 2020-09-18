@@ -12,4 +12,4 @@ class RestaurantDishReview(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.DO_NOTHING, null=True, blank=True)
     diner = models.ForeignKey(Diner, on_delete=models.DO_NOTHING, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
+    

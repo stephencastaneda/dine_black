@@ -1,10 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Check-In</title>
-  </head>
+{% extends 'shared/base.html' %}
+
+{% block content %}
   <body>
     <h1>Check-In</h1>
 <h3>{{ user.first_name }}</h3>
@@ -38,11 +34,14 @@
       <input type="submit" value="Check-In" />
     </form>
 
-    <ol>
+
     {% for user_check_in in user_check_ins %}
-        <li>
-            {{ user_check_in.dish_name }}
-        </li>
+    <div class="card">
+      <div class="card-body">
+           Restaurant: {{ user_check_in.restaurant.name }}
+           Dish: {{ user_check_in.dish_name }}
+           Dish Rating: {{ user_check_in.dish_rating_number }}
+        
       <section id="checkin-actions" style="display:flex;">
         <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
           {% csrf_token %}
@@ -55,7 +54,6 @@
         </form>
       </section>
     {% endfor %}
-    </ol>
-     
-  </body>
-</html>
+    </div>
+    </div>
+{% endblock content %}

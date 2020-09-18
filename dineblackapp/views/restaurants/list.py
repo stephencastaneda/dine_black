@@ -9,7 +9,7 @@ def restaurant_list(request):
     if request.method == "GET":
     
         all_restaurants = Restaurant.objects.all()
-
+        
         template_name = 'restaurants/list.html'
 
         context = {

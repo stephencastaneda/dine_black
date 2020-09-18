@@ -11,6 +11,7 @@ class Restaurant(models.Model):
     phone_number = models.CharField(max_length=15)
     latitude = models.DecimalField(max_digits=10, decimal_places=1)
     longitude = models.DecimalField(max_digits=10, decimal_places=1)
+    image = models.CharField(max_length=300, null=True)
     
     class Meta:
         verbose_name = ("restaurant")
