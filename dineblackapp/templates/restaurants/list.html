@@ -19,21 +19,19 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="d-flex flex-wrap">
     {% for restaurants in all_restaurants %}
-    <div class="d-flex flex-row">
-      <div class="card" style="width: 18rem;">
+      <div class="card m-3 p-3" style="width: 18rem;">
         <img class="card-img-top" src="" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">{{ restaurants.name }}</h5>
+          <h5 class="card-title text-center">{{ restaurants.name }}</h5>
           <p class="card-text">{{ restaurants.address }}</p>
-          <li>
-            <a class="restaurant__name" href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a>
-          </li>
+            <button><a class="restaurant__name" href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
         </div>
       </div>
-    </div>
     {% endfor %}
-        
+      </div>
+
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

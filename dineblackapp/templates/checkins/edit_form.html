@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Edit Check In</h1>
-      <form action="{% url 'dineblackapp:checkins' %}" method="post">
+      <form action="{% url 'dineblackapp:checkin' dish_review.id %}" method="post">
       {% csrf_token %}
  <fieldset>
             <label for="dish_name">Dish Name: </label>
@@ -19,10 +19,6 @@
         <fieldset>
             <label for="dish_image">Dish Image: </label>
             <input id="dish_image" type="text" name="dish_image" value="{{ dish_review.dish_img }}">
-        </fieldset>
-        <fieldset>
-            <label for="created_at">Date: </label>
-            <input id="created_at" type="date" name="created_at" value="{{ dish_review.created_at }}">
         </fieldset>
         <fieldset>
             <label for="dish_rating_number">Dish Rating Number: </label>
