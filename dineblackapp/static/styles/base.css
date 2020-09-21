@@ -80,3 +80,7 @@ body {
   padding-top: 10px;
   padding-left: 10px;
 }
+
+.add_checkin_btn:hover {
+  color: green;
+}

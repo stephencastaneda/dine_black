@@ -1,9 +1,19 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-  <body>
-    <h2 class="check_in_page_title" style="color: white">New Check-In</h2>
-    <form style="color:white" class="check_in_edit_form" action="{% url 'dineblackapp:checkins' %}" method="post">
+<div class="accordion pt-3" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn add_checkin_btn" style="border:none; background:none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <i class="fas fa-plus-square"></i> Check In
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+    <form style="color:black" class="check_in_edit_form" action="{% url 'dineblackapp:checkins' %}" method="post">
       {% csrf_token %}
       <fieldset>
           <label for="dish_name">Dish Name: </label>
@@ -32,6 +42,11 @@
 
       <input type="submit" value="Check-In" />
     </form>
+      </div>
+    </div>
+  </div>
+
+  <body>
 
   <h3 class="check_in_user_name_title">{{ user.first_name }}'s Check-Ins</h3>
  <div class="d-flex flex-wrap">
