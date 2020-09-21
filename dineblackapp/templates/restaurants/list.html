@@ -7,9 +7,9 @@
       <div class="card m-3 p-3" style="width: 18rem;">
         <img class="card-img-top rounded" width="240px" height="200px" src="{{ restaurants.image }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title text-center">{{ restaurants.name }}</h5>
+          <h5 class="card-title">{{ restaurants.name }}</h5>
           <p class="card-text">{{ restaurants.address }}</p>
-            <button class="btn"><a class="restaurant__name" href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
+            <button class="btn"><a  href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
         </div>
          <a class="btn" href="{{ restaurants.google_maps_link }}" target="_blank"><i class="fas fa-route"></i></a></button>
       </div>

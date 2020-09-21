@@ -42,3 +42,27 @@ body {
 .fa-route {
   font-size: 25px
 }
+
+.favorite_restaurant_delete {
+  text-align: right;
+}
+
+.favorite_restaurant_list {
+  display: flex;
+}
+
+.favorite_restaurant_delete_font_awesome {
+  font-size: 20px;
+}
+
+.favorite_restaurant_delete_font_awesome:hover {
+  color: red;
+}
+
+.restaurant_delete_form {
+  display: inline-block;
+}
+ 
+.favorite_restaurant_name {
+  text-align: center;
+}
