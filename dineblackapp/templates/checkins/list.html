@@ -1,14 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Check-In</title>
-  </head>
+{% extends 'shared/base.html' %}
+
+{% block content %}
   <body>
-    <h1>Check-In</h1>
-<h3>{{ user.first_name }}</h3>
-    <form action="{% url 'dineblackapp:checkins' %}" method="post">
+    <h2 class="check_in_page_title" style="color: white">New Check-In</h2>
+    <form style="color:white" class="check_in_edit_form" action="{% url 'dineblackapp:checkins' %}" method="post">
       {% csrf_token %}
       <fieldset>
           <label for="dish_name">Dish Name: </label>
@@ -38,24 +33,28 @@
       <input type="submit" value="Check-In" />
     </form>
 
-    <ol>
+  <h3 class="check_in_user_name_title">{{ user.first_name }}'s Check-Ins</h3>
+ <div class="d-flex flex-wrap">
     {% for user_check_in in user_check_ins %}
-        <li>
-            {{ user_check_in.dish_name }}
-        </li>
-      <section id="checkin-actions" style="display:flex;">
+    <div class="card m-3 p-3" style="width: 18rem;">
+  <img class="card-img-top rounded"  width="240px" height="200px" src="{{ user_check_in.dish_img }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ user_check_in.restaurant.name }}</h5>
+    <p class="card-text">{{ user_check_in.dish_name }}</p>
+    <section id="checkin-actions" style="display:flex;">
         <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
           {% csrf_token %}
           <input type="hidden" name="actual_method" value="DELETE">
-          <button>Delete</button>
+          <button class="btn btn-danger">Delete</button>
         </form>
-         <form action="{% url 'dineblackapp:checkin_edit_form' user_check_in.id %}" method="GET">
+        <form action="{% url 'dineblackapp:checkin_edit_form' user_check_in.id %}" method="GET">
             {% csrf_token %}
-            <button>Edit</button>
+            <button class="btn btn-warning">Edit</button>
         </form>
       </section>
-    {% endfor %}
-    </ol>
-     
-  </body>
-</html>
+  </div>
+</div>
+{% endfor %}
+</h3>
+
+{% endblock content %}

@@ -21,7 +21,6 @@ def checkin_change(request, restaurantdishreview_id):
         if (
           "actual_method" in form_data
           and form_data["actual_method"] == "PUT"
-
         ):
 
           checkin_to_update = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
@@ -29,8 +28,7 @@ def checkin_change(request, restaurantdishreview_id):
           checkin_to_update.dish_name = form_data["dish_name"]
           checkin_to_update.dish_image = form_data["dish_image"]
           checkin_to_update.dish_rating_number = form_data["dish_rating_number"]
-          checkin_to_update.created_at = form_data["created_at"]
-          checkin_to_update.restaurant = form_data["restaurant"]
+          checkin_to_update.restaurant_id = form_data["restaurant"]
 
           checkin_to_update.save()
 
