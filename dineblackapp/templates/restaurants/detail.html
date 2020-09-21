@@ -1,17 +1,25 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant</title>
-  </head>
-  <body>
-    <h1>{{ restaurant.name }}</h1>
-    <h2>By {{ restaurant.address }}</h2>
+{% extends 'shared/base.html' %}
 
+{% block content %}
+
+<div class="restaurant_detail_info">
+    <h2 class="restaurant_detail_title">{{ restaurant.name }}</h2>
+    <h3> {{ restaurant.address }}</h3>
     <div>Phone Number: {{ restaurant.phone_number }}</div>
+</div>
+  <h3 class="restaurant_detail_checkin_title">{{ restaurant.name }} Check-Ins</h3>
+
+
+    <div class="d-flex flex-wrap">
         {% for checkin in checkins %}
-            <div> {{ checkin.dish_name }}</div>
-        {% endfor %}
-  </body>
-</html>
+<div class="card m-3 p-3" style="width: 18rem;">
+  <img class="card-img-top rounded"  width="240px" height="200px" src="{{ checkin.dish_img }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ checkin.dish_name }}</h5>
+    <p class="card-text">{{ checkin.diner.user.first_name }} {{ checkin.diner.user.first_name }}</p>
+    <p class="card-text">{{ checkin.dish_rating_number }}</p>
+  </div>
+</div>        
+{% endfor %}
+</div>
+  {% endblock content %}
