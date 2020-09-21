@@ -4,7 +4,7 @@ from django.db import models
 
 class FavoriteRestaurant(models.Model):
 
-    restaurant = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True)
+    restaurant = models.ForeignKey(Restaurant, related_name=("restaurant"), on_delete=models.DO_NOTHING, null=True, blank=True, unique=True)
     diner = models.ForeignKey(Diner, on_delete=models.DO_NOTHING, null=True, blank=True)
 
     class Meta:
