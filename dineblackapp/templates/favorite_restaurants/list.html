@@ -17,16 +17,18 @@
 
   <h3 class="user_favorite_title">My Favorites</h3>
      
-   <div class="list-group">
+   <div class="list-group favorite_restaurant_list">
     {% for user_favorite in user_favorites %}
-  <a href="#" class="list-group-item list-group-item-action">{{ user_favorite.restaurant.name }}
-  <section id="favorite-actions" style="display:flex;">
+  <a target="_blank" href="{{ user_favorite.restaurant.google_maps_link }}" class="list-group-item list-group-item-action favorite_restaurant_name">{{ user_favorite.restaurant.name }}
+  <div class="restaurant_delete_form">
+  <section id="favorite-actions" class="favorite_restaurant_delete">
         <form action="{% url 'dineblackapp:favorite' user_favorite.id %}" method="POST">
           {% csrf_token %}
           <input type="hidden" name="actual_method" value="DELETE">
-          <button class="btn btn-danger ">Delete</button>
+          <button style="border:none; background:none" class="btn favorite_restaurant_delete_font_awesome"><i class="fas fa-trash-alt"></i></button>
         </form>
       </section> 
+    </div>
   </a>
 </div>
         {% comment %} <li>
