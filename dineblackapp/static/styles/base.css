@@ -13,8 +13,28 @@ body {
   margin-top: 20px;
 }
 
+.user_favorite_title {
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  margin-top: 20px;
+}
 .check_in_page_title {
   color: white;
   padding-left: 20px;
   padding-top: 20px;
+}
+
+.favorite_restaurant_page_title {
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.list-group {
+  padding-top: 25px;
+}
+
+.add_favorite_form {
+  padding-left: 20px;
 }

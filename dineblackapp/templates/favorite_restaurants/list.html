@@ -1,9 +1,8 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <h1>Add Favorite Restaurant</h1>
-<h3>{{ user.first_name }}</h3>
-    <form action="{% url 'dineblackapp:favorites' %}" method="post">
+    <h2 class="favorite_restaurant_page_title">Add Favorite Restaurant</h2>
+    <form class="add_favorite_form" style="color:white" action="{% url 'dineblackapp:favorites' %}" method="post">
       {% csrf_token %}
       <fieldset>
           <label for="restaurant">Restaurant: </label>
@@ -15,18 +14,25 @@
       </fieldset>
       <input type="submit" value="Add-Favorite" />
       </form>
-     <ol>
+
+  <h3 class="user_favorite_title">My Favorites</h3>
+     
+   <div class="list-group">
     {% for user_favorite in user_favorites %}
-        <li>
-            {{ user_favorite.restaurant.name }}
-        </li>
-      <section id="favorite-actions" style="display:flex;">
+  <a href="#" class="list-group-item list-group-item-action">{{ user_favorite.restaurant.name }}
+  <section id="favorite-actions" style="display:flex;">
         <form action="{% url 'dineblackapp:favorite' user_favorite.id %}" method="POST">
           {% csrf_token %}
           <input type="hidden" name="actual_method" value="DELETE">
-          <button>Delete</button>
+          <button class="btn btn-danger ">Delete</button>
         </form>
-      </section>
+      </section> 
+  </a>
+</div>
+        {% comment %} <li>
+            {{ user_favorite.restaurant.name }}
+        </li>
+      {% endcomment %}
     {% endfor %}
-    </ol>
+    
 {% endblock content %}
