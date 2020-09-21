@@ -31,8 +31,7 @@ def favorite_list(request):
         new_favorite = FavoriteRestaurant()
         new_favorite.diner = Diner.objects.get(user=request.user)
         new_favorite.restaurant = Restaurant.objects.get(pk=request.POST["restaurant"])   
-        
-        new_favorite.save()
+       
 
         template_name = 'favorite_restaurants/list.html'
 
