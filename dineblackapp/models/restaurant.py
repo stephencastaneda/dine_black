@@ -12,6 +12,7 @@ class Restaurant(models.Model):
     latitude = models.DecimalField(max_digits=10, decimal_places=1)
     longitude = models.DecimalField(max_digits=10, decimal_places=1)
     image = models.CharField(max_length=300, null=True)
+    google_maps_link = models.CharField(max_length=300, null=True)
     
     class Meta:
         verbose_name = ("restaurant")
