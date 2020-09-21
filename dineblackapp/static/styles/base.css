@@ -13,6 +13,14 @@ body {
   margin-top: 20px;
 }
 
+.restaurant_detail_checkin_title {
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+
 .user_favorite_title {
   text-align: center;
   color: white;
@@ -65,4 +73,10 @@ body {
  
 .favorite_restaurant_name {
   text-align: center;
+}
+
+.restaurant_detail_info {
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
 }
