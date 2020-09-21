@@ -1,8 +1,19 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-    <h2 class="favorite_restaurant_page_title">Add Favorite Restaurant</h2>
-    <form class="add_favorite_form" style="color:white" action="{% url 'dineblackapp:favorites' %}" method="post">
+
+<div class="accordion pt-3" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn add_checkin_btn" style="border:none; background:none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <i class="fas fa-plus-square"></i> Favorite Restaurant
+        </button>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+    <form class="add_favorite_form" style="color:black" action="{% url 'dineblackapp:favorites' %}" method="post">
       {% csrf_token %}
       <fieldset>
           <label for="restaurant">Restaurant: </label>
@@ -14,7 +25,10 @@
       </fieldset>
       <input type="submit" value="Add-Favorite" />
       </form>
-
+      </div>
+    </div>
+  </div>
+    
   <h3 class="user_favorite_title">My Favorites</h3>
      
    <div class="list-group favorite_restaurant_list">
