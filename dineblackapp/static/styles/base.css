@@ -84,3 +84,7 @@ body {
 .add_checkin_btn:hover {
   color: green;
 }
+
+.description-text {
+  font-style: italic;
+}

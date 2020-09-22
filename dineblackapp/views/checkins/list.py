@@ -34,8 +34,7 @@ def check_in_list(request):
         new_check_in.dish_name = request.POST["dish_name"]
         new_check_in.dish_img = request.POST["dish_image"]
         new_check_in.dish_rating_number = request.POST["dish_rating_number"]
-        new_check_in.created_at = request.POST["created_at"]
-
+        new_check_in.description = request.POST['description']
         new_check_in.save()
 
         template_name = 'checkins/list.html'
