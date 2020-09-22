@@ -21,6 +21,10 @@
             <input id="dish_image" type="text" name="dish_image" value="{{ dish_review.dish_img }}">
         </fieldset>
         <fieldset>
+            <label for="description">Description: </label>
+            <input id="description" type="text" name="description" value="{{ dish_review.description }}">
+        </fieldset>
+        <fieldset>
             <label for="dish_rating_number">Dish Rating Number: </label>
             <input id="dish_rating_number" type="number" min="1" max="5" name="dish_rating_number" value="{{ dish_review.dish_rating_number }}">
         </fieldset>

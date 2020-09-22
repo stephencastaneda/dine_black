@@ -24,8 +24,8 @@
           <input id="dish_image" type="text" name="dish_image">
       </fieldset>
       <fieldset>
-          <label for="created_at">Date: </label>
-          <input id="created_at" type="date" name="created_at">
+          <label for="description">Description: </label>
+          <input id="description" type="text" name="description" maxlength="65">
       </fieldset>
       <fieldset>
           <label for="dish_rating_number">Dish Rating Number: </label>
@@ -56,6 +56,7 @@
   <div class="card-body">
     <h5 class="card-title">{{ user_check_in.restaurant.name }}</h5>
     <p class="card-text">{{ user_check_in.dish_name }}</p>
+    <p class="card-text description-text">"{{ user_check_in.description }}"</p>
     <section id="checkin-actions" style="display:flex;">
         <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
           {% csrf_token %}
