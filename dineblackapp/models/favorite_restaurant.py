@@ -11,7 +11,7 @@ class FavoriteRestaurant(models.Model):
     class Meta:
         verbose_name = ("favorite_restaurant")
         verbose_name_plural = ("favorite_restaurants")
-
+        unique_together = ('restaurant', 'diner')
 
     def __str__(self):
         return self.restaurant_id
@@ -19,8 +19,5 @@ class FavoriteRestaurant(models.Model):
     def clean_restaurant_name(self):
         restaurant_name = self.cleaned_data.get('restaurant')
 
-        for instance in Restaurant.objects.all():
-            if instance.restaurant == restaurant_name:
-                raise forms.ValidationError('you already added this restaurant')
-        return restaurant_name
+        
    
