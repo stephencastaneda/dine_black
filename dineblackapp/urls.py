@@ -18,5 +18,4 @@ urlpatterns = [
   path('checkins/<int:restaurantdishreview_id>/', checkin_change, name='checkin'),
   path('checkins/<int:restaurantdishreview_id>/form/', checkin_edit_form, name='checkin_edit_form'),
   path('restaurants/<int:restaurant_id>/', restaurant_details, name='restaurant'),
-
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

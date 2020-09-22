@@ -1,7 +1,10 @@
 import sqlite3
 from django.shortcuts import render, redirect
+from django.core.exceptions import ValidationError
 from django.urls import reverse
+from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 from dineblackapp.models import FavoriteRestaurant, Diner, Restaurant
 from ..connection import Connection
 
@@ -28,11 +31,17 @@ def favorite_list(request):
         return render(request, template_name, context)
 
     elif request.method == 'POST':
-        new_favorite = FavoriteRestaurant()
-        new_favorite.diner = Diner.objects.get(user=request.user)
-        new_favorite.restaurant = Restaurant.objects.get(pk=request.POST["restaurant"])   
-        
-        new_favorite.save()
+        try:
+          new_favorite = FavoriteRestaurant()
+          new_favorite.diner = Diner.objects.get(user=request.user)
+          new_favorite.restaurant = Restaurant.objects.get(pk=request.POST["restaurant"])   
+       
+          new_favorite.save()
+        except ValidationError:
+          print ("You already added this restaurant!")
+        except IntegrityError:
+          return HttpResponse("ERROR: You already added this restaurant! Go back and try adding a different restaurant.")
+
 
         template_name = 'favorite_restaurants/list.html'
 
