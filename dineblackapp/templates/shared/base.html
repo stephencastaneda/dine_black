@@ -38,9 +38,23 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'dineblackapp:checkins' %}">CheckIn</a>
       </li>
+      
+      {% if user.is_authenticated %}
+
       <li class="nav-item mr-sm-2">
-        <a class="nav-link" href="#">Logout</a>
+        <a class="nav-link" href="{% url 'dineblackapp:logout' %}">Logout</a>
       </li>
+      {% endif %}
+
+      {% if not user.is_authenticated %}
+      <li class="nav-item mr-sm-2">
+          <a class="nav-link" href="{% url 'dineblackapp:login' %}">Login</a>      
+      </li>
+      {% endif %}
+      <li class="nav-item mr-sm-2">
+        <a class="nav-link" href="{% url 'dineblackapp:register' %}">Register</a>
+      </li>
+
 </ul>
   </div>
 </nav>
