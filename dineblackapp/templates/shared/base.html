@@ -76,7 +76,7 @@
     cloudName: 'dbjxqdddk', 
     uploadPreset: 'img_upload'}, (error, result) => { 
         if (!error && result && result.event === "success") { 
-            document.getElementById('dish_img').value = result.info.secure_url
+            document.getElementById('dish_image').value = result.info.secure_url
         }
     }
     )
@@ -84,6 +84,7 @@
     document.getElementById("upload_widget").addEventListener("click", function(){
     myWidget.open();
     }, false);
+
     </script>
 </body>
 
