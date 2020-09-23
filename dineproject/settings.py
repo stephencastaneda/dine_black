@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dineblackapp',
     'bootstrap4',
-    'star_ratings'
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
