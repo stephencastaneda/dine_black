@@ -26,7 +26,6 @@ def checkin_change(request, restaurantdishreview_id):
           checkin_to_update = RestaurantDishReview.objects.get(pk=restaurantdishreview_id)
 
           checkin_to_update.dish_name = form_data["dish_name"]
-          checkin_to_update.dish_image = form_data["dish_image"]
           checkin_to_update.dish_rating_number = form_data["dish_rating_number"]
           checkin_to_update.description = form_data["description"]
           checkin_to_update.restaurant_id = form_data["restaurant"]
