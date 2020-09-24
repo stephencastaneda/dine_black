@@ -30,7 +30,7 @@ def register_user(request):
             login(request, authenticated_user)
 
             # Redirect the browser to wherever you want to go after registering
-            return redirect(reverse('dineblackapp:home'))
+            return redirect(reverse('dineblackapp:home', args=[restaurant_id]))
 
     # handles a request to load the empty form for the user to fill out
     else:

@@ -2,7 +2,6 @@
 
 {% block content %}
 
-
     <div class="d-flex flex-wrap">
       {% for restaurants in all_restaurants %}
       <div class="card m-3 p-3" style="width: 18rem;">
@@ -10,10 +9,16 @@
         <div class="card-body">
           <h5 class="card-title">{{ restaurants.name }}</h5>
           <p class="card-text">{{ restaurants.address }}</p>
+          {% for checkin in all_checkins %}
+           {% if checkin.restaurant_id == restaurants.id %}
+            <h3>YEAAA BUDDY!</h3>
+        {% endif %}
+    {% endfor %}
             <button class="btn"><a  href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
         </div>
          <a class="btn" href="{{ restaurants.google_maps_link }}" target="_blank"><i class="fas fa-route"></i></a></button>
       </div>
+      
     {% endfor %}
     </div>
 

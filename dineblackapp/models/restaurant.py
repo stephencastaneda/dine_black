@@ -14,6 +14,7 @@ class Restaurant(models.Model):
     image = models.CharField(max_length=300, null=True)
     google_maps_link = models.CharField(max_length=300, null=True)
     
+    
     class Meta:
         verbose_name = ("restaurant")
         verbose_name_plural = ("restaurants")
