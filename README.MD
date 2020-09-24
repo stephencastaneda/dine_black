@@ -25,13 +25,13 @@ Dine.Black. creates a fun way for users to share their dining experiences at bla
 3. Create a virtual enviornment at the level of your project's `manage.py` file
 4. Create your virtual environment
 
-* Mac users, run the following:
+Mac users, run the following:
 * `python -m venv dineenv`
 * `source ./dineenv/bin/activate`
 * `pip install django`
 * `pip freeze > requirements.txt`
 
-* Windows users, run the following:
+Windows users, run the following:
 * `python -m venv dineenv`
 * `source ./dineenv/Scripts/activate`
 * `pip install django`
