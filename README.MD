@@ -39,7 +39,7 @@ Windows users, run the following:
 
 5. Run migrations
 
-* Run the following command from `library project` folder `python manage.py makemigrations` 
+* Run the following command from `dineproject` folder `python manage.py makemigrations` 
 * Next, run `python manage.py migrate`
 
 6. Next run `python manage.py runserver`
