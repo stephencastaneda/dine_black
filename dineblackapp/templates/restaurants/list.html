@@ -11,7 +11,7 @@
           <p class="card-text">{{ restaurants.address }}</p>
           {% for checkin in all_checkins %}
            {% if checkin.restaurant_id == restaurants.id %}
-            <h3>YEAAA BUDDY!</h3>
+            <h3>{{ restaurants.name }}</h3>
         {% endif %}
     {% endfor %}
             <button class="btn"><a  href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
