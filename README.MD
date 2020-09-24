@@ -23,18 +23,24 @@ Dine.Black. creates a fun way for users to share their dining experiences at bla
 1. Create a new directory in your terminal. Clone down this repository by clicking the "Clone or Download" button above, copying the SSH key, and running the following command in your terminal `git clone sshKeyGoesHere`
 2. `cd dine-black` 
 3. Create a virtual enviornment at the level of your project's `manage.py` file
-4. Mac users, run the following:
-`python -m venv dineenv`
-`source ./dineenv/bin/activate`
-`pip install django`
-`pip freeze > requirements.txt`
+4. Create your virtual environment
 
-Windows users, run the following:
-`python -m venv dineenv`
-`source ./dineenv/Scripts/activate`
-`pip install django`
-`pip freeze > requirements.txt`
-5. Run migrations - Run the following command from `library project` folder `python manage.py makemigrations` 
-Next, run `python manage.py migrate`
+* Mac users, run the following:
+* `python -m venv dineenv`
+* `source ./dineenv/bin/activate`
+* `pip install django`
+* `pip freeze > requirements.txt`
+
+* Windows users, run the following:
+* `python -m venv dineenv`
+* `source ./dineenv/Scripts/activate`
+* `pip install django`
+* `pip freeze > requirements.txt`
+
+5. Run migrations
+
+* Run the following command from `library project` folder `python manage.py makemigrations` 
+* Next, run `python manage.py migrate`
+
 6. Next run `python manage.py runserver`
 7. Click on `register` in the Navbar and create a new account to use the app
