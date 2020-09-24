@@ -1,20 +1,18 @@
-{% load static %}
+{% extends 'shared/base.html' %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bangazon</title>
-    <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
-    <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
-  </head>
+{% block content %}
   <body>
     <h1>Edit Check In</h1>
       <form action="{% url 'dineblackapp:checkin' dish_review.id %}" method="post">
       {% csrf_token %}
- <fieldset>
+        <fieldset>
             <label for="dish_name">Dish Name: </label>
             <input id="dish_name" type="text" name="dish_name" value="{{ dish_review.dish_name }}">
+        </fieldset>
+         <fieldset>
+          <label for="dish_image">Dish Image: </label>
+          <input type="button" id="upload_widget" class="cloudinary_button" value="Upload image"></button>
+          <input id="dish_image" type="hidden" value="" name="dish_image">
         </fieldset>
         <fieldset>
             <label for="description">Description: </label>
@@ -36,4 +34,4 @@
          <input type="hidden" name="actual_method" value="PUT">
           <input type="submit" value="Update" />    
   </body>
-</html>
+{% endblock content %}
