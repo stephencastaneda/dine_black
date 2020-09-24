@@ -4,7 +4,7 @@
 
 
     <div class="d-flex flex-wrap">
-    {% for restaurants in all_restaurants %}
+      {% for restaurants in all_restaurants %}
       <div class="card m-3 p-3" style="width: 18rem;">
         <img class="card-img-top rounded" width="240px" height="200px" src="{{ restaurants.image }}" alt="Card image cap">
         <div class="card-body">
@@ -15,6 +15,6 @@
          <a class="btn" href="{{ restaurants.google_maps_link }}" target="_blank"><i class="fas fa-route"></i></a></button>
       </div>
     {% endfor %}
-      </div>
+    </div>
 
 {% endblock content %}
