@@ -3,6 +3,15 @@ body {
   font-family: "Rubik", serif;
 }
 
+.login-form {
+  bottom: 70px;
+    position: absolute;
+    z-index: 999;
+    text-align: right;
+    color: black;
+    padding-left: 80px;
+}
+
 .check_in_edit_form {
   padding-left: 25px;
 }
