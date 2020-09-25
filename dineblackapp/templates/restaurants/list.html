@@ -4,22 +4,41 @@
 
     <div class="d-flex flex-wrap">
       {% for restaurants in all_restaurants %}
-      <div class="card m-3 p-3" style="width: 18rem;">
+        {% for checkin in all_checkins %}
+           {% if checkin.restaurant_id == restaurants.id %}
+      <div class="card m-3 p-3 checkedin_restaurants" style="width: 18rem;">
         <img class="card-img-top rounded" width="240px" height="200px" src="{{ restaurants.image }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ restaurants.name }}</h5>
           <p class="card-text">{{ restaurants.address }}</p>
-          {% for checkin in all_checkins %}
-           {% if checkin.restaurant_id == restaurants.id %}
-            <h3>{{ restaurants.name }}</h3>
-        {% endif %}
-    {% endfor %}
             <button class="btn"><a  href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
         </div>
          <a class="btn" href="{{ restaurants.google_maps_link }}" target="_blank"><i class="fas fa-route"></i></a></button>
       </div>
-      
+           {% endif %}
     {% endfor %}
+    {% endfor %}
+      <div class="d-flex flex-wrap">
+      {% for restaurants in all_restaurants %}
+        {% for checkin in all_checkins %}
+          {% if checkin.restaurant_id  %}
+
+      <div class="card m-3 p-3 not_checkedin_restaurants" style="width: 18rem;">
+        <img class="card-img-top rounded" width="240px" height="200px" src="{{ restaurants.image }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ restaurants.name }}</h5>
+          <p class="card-text">{{ restaurants.address }}</p>
+            <button class="btn"><a  href="{% url 'dineblackapp:restaurant' restaurants.id %}"> Details </a></button>
+        </div>
+         <a class="btn" href="{{ restaurants.google_maps_link }}" target="_blank"><i class="fas fa-route"></i></a></button>
+      </div>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+
+
+
     </div>
 
 {% endblock content %}

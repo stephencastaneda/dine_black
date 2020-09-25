@@ -88,3 +88,9 @@ body {
 .description-text {
   font-style: italic;
 }
+
+.checkedin_restaurants {
+	-webkit-box-shadow: 0 8px 6px -6px red;
+	   -moz-box-shadow: 0 8px 6px -6px red;
+          box-shadow: 12px 12px 12px -6px red;
+}
