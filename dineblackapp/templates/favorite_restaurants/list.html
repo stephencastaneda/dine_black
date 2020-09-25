@@ -33,7 +33,7 @@
      
   <div class="list-group favorite_restaurant_list">
     {% for user_favorite in user_favorites %}
-    <a target="_blank" href="{{ user_favorite.restaurant.google_maps_link }}" class="list-group-item list-group-item-action favorite_restaurant_name">{{ user_favorite.restaurant.name }}
+    <a target="_blank" href="{{ user_favorite.restaurant.google_maps_link }}" class="list-group-item list-group-item-action favorite_restaurant_name fav_restaurant_list">{{ user_favorite.restaurant.name }}
       <div class="restaurant_delete_form">
         <section id="favorite-actions" class="favorite_restaurant_delete">
           <form action="{% url 'dineblackapp:favorite' user_favorite.id %}" method="POST">

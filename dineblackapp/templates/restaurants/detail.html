@@ -15,6 +15,7 @@
       <div class="card m-3 p-3" style="width: 18rem;">
         <img class="card-img-top rounded"  width="240px" height="200px" src="{{ checkin.dish_img }}" alt="Card image cap">
           <div class="card-body">
+          <p class="card-text text-center">{{ user_check_in.dish_rating_number }}</p>
             <h5 class="card-title">{{ checkin.dish_name }}</h5>
             <p class="card-text">{{ checkin.diner.user.first_name }} {{ checkin.diner.user.first_name }}</p>
             <p class="card-text description-text"> "{{ checkin.description }}" </p>

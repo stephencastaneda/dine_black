@@ -55,18 +55,19 @@
     <div class="card m-3 p-3" style="width: 18rem;">
       <img class="card-img-top rounded"  width="240px" height="200px" src="{{ user_check_in.dish_img }}" alt="Card image cap">
         <div class="card-body">
+          <p class="card-text text-center">{{ user_check_in.dish_rating_number }}</p>
           <h5 class="card-title">{{ user_check_in.restaurant.name }}</h5>
           <p class="card-text">{{ user_check_in.dish_name }}</p>
           <p class="card-text description-text">"{{ user_check_in.description }}"</p>
-          <section id="checkin-actions" style="display:flex;">
+          <section id="checkin-actions" style="display:flex;justify-content:space-between;">
           <form action="{% url 'dineblackapp:checkin' user_check_in.id %}" method="POST">
             {% csrf_token %}
             <input type="hidden" name="actual_method" value="DELETE">
-            <button class="btn btn-danger">Delete</button>
+      <button style="border:none; background:none" class="btn checkin_edit_font_awesome"><i class="fas fa-trash-alt"></i></button>
           </form>
           <form action="{% url 'dineblackapp:checkin_edit_form' user_check_in.id %}" method="GET">
             {% csrf_token %}
-            <button class="btn btn-warning">Edit</button>
+      <button style="border:none; background:none" class="btn checkin_delete_font_awesome"><i class="fas fa-pencil-alt"></i></button>
           </form>
       </section>
     </div>
