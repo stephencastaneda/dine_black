@@ -13,7 +13,7 @@ def get_restaurant(restaurant_id):
 
 def get_checkins(restaurant_id, restaurant):
 
-    all_checkins = RestaurantDishReview.objects.all(restaurant_id=restaurant.id)
+    all_checkins = RestaurantDishReview.objects.filter(restaurant_id=restaurant.id)
 
     return(all_checkins)
 
