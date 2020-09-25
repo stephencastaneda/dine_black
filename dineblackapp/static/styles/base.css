@@ -1,5 +1,6 @@
 body {
-  background-color: #333333
+  background-color: #333333;
+  font-family: "Rubik", serif;
 }
 
 .check_in_edit_form {
@@ -63,6 +64,24 @@ body {
   font-size: 20px;
 }
 
+.checkin_delete_font_awesome {
+  font-size: 30px
+}
+
+.checkin_delete_font_awesome:hover {
+  color: red;
+}
+
+
+.checkin_edit_font_awesome {
+  font-size: 30px
+}
+
+.checkin_edit_font_awesome:hover {
+  color: red;
+}
+
+
 .favorite_restaurant_delete_font_awesome:hover {
   color: red;
 }
@@ -87,4 +106,8 @@ body {
 
 .description-text {
   font-style: italic;
+}
+
+.fav_restaurant_list:hover {
+  color: green;
 }
